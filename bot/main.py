@@ -1,10 +1,11 @@
 import discord
-from discord.ext import commands
+from discord.ext import commands, tasks
 import os
 from dotenv import load_dotenv
 import certifi
 from colorama import Fore, Back, Style
-import random
+from itertools import cycle
+import asyncio
 
 # Load SSL Certificates
 os.environ['SSL_CERT_FILE'] = certifi.where()
@@ -16,22 +17,34 @@ TOKEN = os.getenv('TOKEN')
 # Create client
 client = commands.Bot(command_prefix = '!', intents = discord.Intents.all())
 
+# Status Loop
+status = cycle(['with Humans!', 'with LifeQuest!', 'with Life Decisions!'])
+
+@tasks.loop(seconds=15)
+async def change_status():
+    await client.change_presence(activity=discord.Game(next(status)))
+
 # On Ready Event
 @client.event
 async def on_ready():
+    await client.tree.sync()
     print(Fore.GREEN + 'Success: Client is loaded and active.')
-
-@client.command()
-async def ping(ctx):
-    await ctx.author.send('Pong!')
-    
-    
-@client.command(aliases=['8ball'])
-async def eightball(ctx, *, question):
-    list = ['Yes', 'No', 'Maybe', 'Probably', 'Probably Not', 'Ask Again Later']
-    await ctx.send(f'<@{ctx.author.id}> ' + random.choice(list))   
+    change_status.start()
 
 
+@client.command(name="sync")
+async def sync(ctx):
+    synced = await client.tree.sync()
+    print(f'Synced {len(synced)} commands')
 
-# Run client
-client.run(TOKEN)
+async def load():
+    for filename in os.listdir('./cogs'):
+        if filename.endswith('.py'):
+            await client.load_extension(f'cogs.{filename[:-3]}')
+
+async def main():
+    async with client:
+        await load()
+        await client.start(TOKEN)
+
+asyncio.run(main())
