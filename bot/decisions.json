@@ -1,0 +1,272 @@
+[
+  {
+    "decision": "Crawl or Stay Put",
+    "description": "Do you try to crawl around and explore, or stay put and observe?",
+    "options": [
+      {
+        "text": "Crawl",
+        "option": true,
+        "impact": {
+          "happiness": 5,
+          "health": 3,
+          "smart": 7,
+          "looks": 0
+        }
+      },
+      {
+        "text": "Stay Put",
+        "option": false,
+        "impact": {
+          "happiness": 5,
+          "health": 0,
+          "smart": 0,
+          "looks": 0
+        }
+      }
+    ],
+    "lifestage": "baby"
+  },
+  {
+    "decision": "Cry or Sleep",
+    "description": "Do you cry or sleep?",
+    "options": [
+      {
+        "text": "Cry",
+        "option": true,
+        "impact": {
+          "happiness": -3,
+          "health": 1,
+          "smart": 0,
+          "looks": 0
+        }
+      },
+      {
+        "text": "Sleep",
+        "option": false,
+        "impact": {
+          "happiness": 5,
+          "health": 4,
+          "smart": 3,
+          "looks": 0
+        }
+      }
+    ],
+    "lifestage": "baby"
+  },
+  {
+    "decision": "Grab or Ignore",
+    "description": "A colorful toy is within reach. Do you grab it or ignore it?",
+    "options": [
+      {
+        "text": "Grab",
+        "option": true,
+        "impact": {
+          "happiness": 4,
+          "health": 0,
+          "smart": 5,
+          "looks": 0
+        }
+      },
+      {
+        "text": "Ignore",
+        "option": false,
+        "impact": {
+          "happiness": 2,
+          "health": 0,
+          "smart": 1,
+          "looks": 0
+        }
+      }
+    ],
+    "lifestage": "baby"
+  },
+  {
+    "decision": "Laugh or Cry",
+    "description": "Someone is making funny faces at you. Do you laugh or cry?",
+    "options": [
+      {
+        "text": "Laugh",
+        "option": true,
+        "impact": {
+          "happiness": 6,
+          "health": 0,
+          "smart": 2,
+          "looks": 0
+        }
+      },
+      {
+        "text": "Cry",
+        "option": false,
+        "impact": {
+          "happiness": -4,
+          "health": 0,
+          "smart": 0,
+          "looks": 0
+        }
+      }
+    ],
+    "lifestage": "baby"
+  },
+  {
+    "decision": "Eat or Refuse",
+    "description": "It's mealtime. Do you eat what's given or refuse it?",
+    "options": [
+      {
+        "text": "Eat",
+        "option": true,
+        "impact": {
+          "happiness": 3,
+          "health": 5,
+          "smart": 0,
+          "looks": 0
+        }
+      },
+      {
+        "text": "Refuse",
+        "option": false,
+        "impact": {
+          "happiness": -2,
+          "health": -3,
+          "smart": 0,
+          "looks": 0
+        }
+      }
+    ],
+    "lifestage": "baby"
+  },
+  {
+    "decision": "Babble or Silence",
+    "description": "You feel an urge to make noises. Do you babble or stay silent?",
+    "options": [
+      {
+        "text": "Babble",
+        "option": true,
+        "impact": {
+          "happiness": 4,
+          "health": 0,
+          "smart": 4,
+          "looks": 0
+        }
+      },
+      {
+        "text": "Silence",
+        "option": false,
+        "impact": {
+          "happiness": 1,
+          "health": 0,
+          "smart": 1,
+          "looks": 0
+        }
+      }
+    ],
+    "lifestage": "baby"
+  },
+  {
+    "decision": "Reach Out or Withdraw",
+    "description": "A stranger smiles at you. Do you reach out or withdraw?",
+    "options": [
+      {
+        "text": "Reach Out",
+        "option": true,
+        "impact": {
+          "happiness": 5,
+          "health": 0,
+          "smart": 3,
+          "looks": 0
+        }
+      },
+      {
+        "text": "Withdraw",
+        "option": false,
+        "impact": {
+          "happiness": -1,
+          "health": 0,
+          "smart": 0,
+          "looks": 0
+        }
+      }
+    ],
+    "lifestage": "baby"
+  },
+  {
+    "decision": "Play or Rest",
+    "description": "You have energy to spend. Do you play or take a rest?",
+    "options": [
+      {
+        "text": "Play",
+        "option": true,
+        "impact": {
+          "happiness": 6,
+          "health": 2,
+          "smart": 5,
+          "looks": 0
+        }
+      },
+      {
+        "text": "Rest",
+        "option": false,
+        "impact": {
+          "happiness": 2,
+          "health": 4,
+          "smart": 0,
+          "looks": 0
+        }
+      }
+    ],
+    "lifestage": "baby"
+  },
+  {
+    "decision": "Touch or Avoid",
+    "description": "Something new is in front of you. Do you touch it or avoid it?",
+    "options": [
+      {
+        "text": "Touch",
+        "option": true,
+        "impact": {
+          "happiness": 4,
+          "health": 0,
+          "smart": 6,
+          "looks": 0
+        }
+      },
+      {
+        "text": "Avoid",
+        "option": false,
+        "impact": {
+          "happiness": 2,
+          "health": 0,
+          "smart": 1,
+          "looks": 0
+        }
+      }
+    ],
+    "lifestage": "baby"
+  },
+  {
+    "decision": "Giggle or Frown",
+    "description": "You hear a strange sound. Do you giggle or frown?",
+    "options": [
+      {
+        "text": "Giggle",
+        "option": true,
+        "impact": {
+          "happiness": 6,
+          "health": 0,
+          "smart": 2,
+          "looks": 0
+        }
+      },
+      {
+        "text": "Frown",
+        "option": false,
+        "impact": {
+          "happiness": -2,
+          "health": 0,
+          "smart": 1,
+          "looks": 0
+        }
+      }
+    ],
+    "lifestage": "baby"
+  }
+]

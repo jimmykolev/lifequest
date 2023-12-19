@@ -27,7 +27,7 @@ async def change_status():
 # On Ready Event
 @client.event
 async def on_ready():
-    await client.tree.sync()
+    await client.tree.sync(guild=discord.Object(id=1070668718713085983))
     print(Fore.GREEN + 'Success: Client is loaded and active.')
     change_status.start()
 
