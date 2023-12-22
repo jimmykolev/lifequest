@@ -17,6 +17,35 @@ db = mongoClient['lifequest']
 collection = db['users']
 
 
+class LifeChoice(discord.ui.View):
+    def __init__(self, user_id):
+        super().__init__()
+        self.user_id = user_id
+        self.value = None
+    
+    @discord.ui.button(label='University', style=discord.ButtonStyle.primary)
+    async def university(self, interaction: discord.Interaction, Button: discord.ui.Button):
+        character = collection.find_one({'user_id': self.user_id})['character']
+        character['education']['university'] = True
+        character['education']['high_school'] = False
+        character['education']['none'] = False
+        collection.update_one({'user_id': self.user_id}, {'$set': {'character': character}})
+        embed = discord.Embed(title="University", description="You've chosen to go to university! Use **/degree** to choice your degree", color=discord.Color.green())
+        await interaction.response.send_message(embed=embed)
+        self.stop()
+    @discord.ui.button(label='Work', style=discord.ButtonStyle.primary)
+    async def work(self, interaction: discord.Interaction, Button: discord.ui.Button):
+        character = collection.find_one({'user_id': self.user_id})['character']
+        character['education']['none'] = True
+        character['education']['high_school'] = False
+        collection.update_one({'user_id': self.user_id}, {'$set': {'character': character}})
+        embed = discord.Embed(title="Work", description="You've chosen to go straight into work! Use **/job** to choice your job", color=discord.Color.green())
+        await interaction.response.send_message(embed=embed)
+        self.stop()
+        
+        
+
+
 class NextDecisionView(discord.ui.View):
     def __init__(self, user_id, decisions, impact):
         super().__init__()
@@ -131,6 +160,24 @@ class DecisionTwo(discord.ui.View):
         if character['siblings']:
           for sibling in character['siblings']:
             sibling['age'] += 1
+            
+        if character['age'] >= 3:
+            character['education']['pre_school'] = True
+            character['education']['none'] = False
+        if character['age'] >= 5:
+            character['education']['elementary_school'] = True
+            character['education']['pre_school'] = False
+        if character['age'] >= 11:
+            character['education']['middle_school'] = True
+            character['education']['elementary_school'] = False
+        if character['age'] >= 14:
+            character['education']['high_school'] = True
+            character['education']['middle_school'] = False
+        if character['age'] >= 18:
+            character['education']['none'] = True
+            character['education']['high_school'] = False
+            
+            
                     
         print(f"After update: {character['attributes']}")
         self.value = 'Option 2'  # Changed value to Option 2
@@ -147,7 +194,10 @@ class DecisionTwo(discord.ui.View):
 
         try:
             print(type(interaction))
-            impact_embed.add_field(name="Age", value=f"+1", inline=True)
+            impact_embed.add_field(name="You've Aged Up!", value=f"+1", inline=False)
+            if character['age'] >= 18:
+                embed = discord.Embed(title="You've Graduated High School!", description="You've graduated high school! You can now choose to go to university or straight into work.", color=discord.Color.green())
+                await interaction.user.send(embed=embed, view=LifeChoice(self.user_id))
             await interaction.response.send_message(embed=impact_embed)
         except Exception as e:
             print(f"Error while sending impact embed: {e}")
@@ -176,6 +226,23 @@ class DecisionTwo(discord.ui.View):
         if character['siblings']:
           for sibling in character['siblings']:
             sibling['age'] += 1
+            
+        if character['age'] >= 3:
+            character['education']['pre_school'] = True
+            character['education']['none'] = False
+        if character['age'] >= 5:
+            character['education']['elementary_school'] = True
+            character['education']['pre_school'] = False
+        if character['age'] >= 11:
+            character['education']['middle_school'] = True
+            character['education']['elementary_school'] = False
+        if character['age'] >= 14:
+            character['education']['high_school'] = True
+            character['education']['middle_school'] = False
+        if character['age'] >= 18:
+            character['education']['none'] = True
+            character['education']['high_school'] = False
+ 
                     
         print(f"After update: {character['attributes']}")
         self.value = 'Option 2'  # Changed value to Option 2
@@ -192,7 +259,10 @@ class DecisionTwo(discord.ui.View):
 
         try:
             print(type(interaction))
-            impact_embed.add_field(name="Age", value=f"+1", inline=True)
+            impact_embed.add_field(name="You've Aged Up!", value=f"+1", inline=False)
+            if character['age'] >= 18:
+                embed = discord.Embed(title="You've Graduated High School!", description="You've graduated high school! You can now choose to go to university or straight into work.", color=discord.Color.green())
+                await interaction.user.send(embed=embed, view=LifeChoice(self.user_id))
             await interaction.response.send_message(embed=impact_embed)
         except Exception as e:
             print(f"Error while sending impact embed: {e}")

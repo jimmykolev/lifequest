@@ -92,6 +92,20 @@ class Start(commands.Cog):
         age = 0
         life_stage = 'baby'
         
+        education = {
+            'pre_school': False,
+            'elementary_school': False,
+            'middle_school': False,
+            'high_school': False,
+            'university': False,
+            'graduate_school': False,
+            'none': True
+        }
+        
+        degree = None
+        occupation = None
+        doing_degree = False
+        
         character = {
             'name': {'first': firstName, 'last': lastName},
             'location': {'country': country, 'city': city},
@@ -100,7 +114,11 @@ class Start(commands.Cog):
             'attributes': attributes,
             'age': age,
             'gender': gender,
-            'life_stage': life_stage
+            'life_stage': life_stage,
+            'education': education,
+            'occupation': occupation,
+            'degree': degree,
+            'doing_degree': doing_degree
         }
         
         return character

@@ -36,12 +36,29 @@ class Character(commands.Cog):
                progress_bar = '🟩' * filled_squares + '⬛' * empty_squares
                return progress_bar
            
+            if character['education']['pre_school'] == True:
+               education = 'Pre-School'
+            elif character['education']['elementary_school'] == True:
+                education = 'Elementary School'
+            elif character['education']['middle_school'] == True:
+                education = 'Middle School'
+            elif character['education']['high_school'] == True:
+                education = 'High School'
+            elif character['education']['university'] == True:
+                education = 'University'
+            elif character['education']['none'] == True:
+                education = 'None'
+                
+            if character['occupation'] == None:
+                occupation = 'None'
             embed = discord.Embed(title = 'Character', description = 'Information about your current Life', color = discord.Color.blue()) 
             embed.set_author(name=f'Requested by {interaction.user}', icon_url=interaction.user.avatar)
             embed.add_field(name = 'Name', value = f"{character['name']['first']} {character['name']['last']}", inline = True)
             embed.add_field(name = 'Location', value = f"{character['location']['city']}, {character["location"]["country"]}", inline = False)
             embed.add_field(name = 'Age', value =str(character['age']), inline = True)
             embed.add_field(name = 'Life Stage', value = character['life_stage'], inline = True)
+            embed.add_field(name = 'Education', value = education, inline = True)
+            embed.add_field(name = 'Occupation', value = occupation, inline = True)
             embed.add_field(name = 'Happiness', value = f'{attribute_to_progress_bar(character["attributes"]["happiness"])} {character["attributes"]["happiness"]}%', inline = False)
             embed.add_field(name = 'Health', value = f'{attribute_to_progress_bar(character["attributes"]["health"])} {character["attributes"]["health"]}%', inline = False)
             embed.add_field(name = 'Smarts', value = f'{attribute_to_progress_bar(character["attributes"]["smart"])} {character["attributes"]["smart"]}%', inline = False)

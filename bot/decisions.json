@@ -268,5 +268,815 @@
       }
     ],
     "lifestage": "baby"
-  }
+  },
+    {
+      "decision": "Play with Blocks or Ignore Them",
+      "description": "There's a pile of colorful blocks. Do you play with them or ignore them?",
+      "options": [
+        {
+          "text": "Play with Blocks",
+          "option": true,
+          "impact": {
+            "happiness": 5,
+            "health": 0,
+            "smart": 3,
+            "looks": 0
+          }
+        },
+        {
+          "text": "Ignore Them",
+          "option": false,
+          "impact": {
+            "happiness": -1,
+            "health": 0,
+            "smart": 0,
+            "looks": 0
+          }
+        }
+      ],
+      "lifestage": "toddler"
+    },
+    {
+      "decision": "Draw or Not",
+      "description": "You have crayons and paper. Do you want to draw?",
+      "options": [
+        {
+          "text": "Draw",
+          "option": true,
+          "impact": {
+            "happiness": 4,
+            "health": 0,
+            "smart": 4,
+            "looks": 0
+          }
+        },
+        {
+          "text": "Don't Draw",
+          "option": false,
+          "impact": {
+            "happiness": 0,
+            "health": 0,
+            "smart": -1,
+            "looks": 0
+          }
+        }
+      ],
+      "lifestage": "toddler"
+    },
+    {
+      "decision": "Splash in Puddles or Stay Dry",
+      "description": "It rained and there are puddles outside. Do you splash in them or stay dry?",
+      "options": [
+        {
+          "text": "Splash in Puddles",
+          "option": true,
+          "impact": {
+            "happiness": 6,
+            "health": -2,
+            "smart": 0,
+            "looks": 0
+          }
+        },
+        {
+          "text": "Stay Dry",
+          "option": false,
+          "impact": {
+            "happiness": -3,
+            "health": 1,
+            "smart": 0,
+            "looks": 0
+          }
+        }
+      ],
+      "lifestage": "toddler"
+    },
+    {
+      "decision": "Share Toys or Not",
+      "description": "Another child wants to play with your toys. Do you share?",
+      "options": [
+        {
+          "text": "Share Toys",
+          "option": true,
+          "impact": {
+            "happiness": 3,
+            "health": 0,
+            "smart": 2,
+            "looks": 0
+          }
+        },
+        {
+          "text": "Don't Share",
+          "option": false,
+          "impact": {
+            "happiness": -4,
+            "health": 0,
+            "smart": -2,
+            "looks": 0
+          }
+        }
+      ],
+      "lifestage": "toddler"
+    },
+    {
+      "decision": "Play Peekaboo or Not",
+      "description": "Your parent wants to play peekaboo. Do you play along?",
+      "options": [
+        {
+          "text": "Play Peekaboo",
+          "option": true,
+          "impact": {
+            "happiness": 5,
+            "health": 0,
+            "smart": 1,
+            "looks": 0
+          }
+        },
+        {
+          "text": "Don't Play",
+          "option": false,
+          "impact": {
+            "happiness": -2,
+            "health": 0,
+            "smart": 0,
+            "looks": 0
+          }
+        }
+      ],
+      "lifestage": "toddler"
+    },
+    {
+      "decision": "Follow Instructions or Not",
+      "description": "Your parent asks you to put your toys away. Do you follow their instructions?",
+      "options": [
+        {
+          "text": "Follow Instructions",
+          "option": true,
+          "impact": {
+            "happiness": 2,
+            "health": 0,
+            "smart": 3,
+            "looks": 0
+          }
+        },
+        {
+          "text": "Don't Follow",
+          "option": false,
+          "impact": {
+            "happiness": -3,
+            "health": 0,
+            "smart": -1,
+            "looks": 0
+          }
+        }
+      ],
+      "lifestage": "toddler"
+    },
+    {
+      "decision": "Cuddle Stuffed Animal or Ignore",
+      "description": "You have a favorite stuffed animal. Do you cuddle it or ignore it?",
+      "options": [
+        {
+          "text": "Cuddle Stuffed Animal",
+          "option": true,
+          "impact": {
+            "happiness": 4,
+            "health": 0,
+            "smart": 0,
+            "looks": 0
+          }
+        },
+        {
+          "text": "Ignore",
+          "option": false,
+          "impact": {
+            "happiness": -2,
+            "health": 0,
+            "smart": 0,
+            "looks": 0
+          }
+        }
+      ],
+      "lifestage": "toddler"
+    },
+    {
+      "decision": "Eat Veggies or Refuse",
+      "description": "It's dinner time, and there are veggies on your plate. Do you eat them or refuse?",
+      "options": [
+        {
+          "text": "Eat Veggies",
+          "option": true,
+          "impact": {
+            "happiness": -1,
+            "health": 5,
+            "smart": 1,
+            "looks": 0
+          }
+        },
+        {
+          "text": "Refuse Veggies",
+          "option": false,
+          "impact": {
+            "happiness": 3,
+            "health": -2,
+            "smart": 0,
+            "looks": 0
+          }
+        }
+      ],
+      "lifestage": "toddler"
+    },
+    {
+      "decision": "Listen to Story or Not",
+      "description": "Your parent wants to read you a story. Do you listen or not?",
+      "options": [
+        {
+          "text": "Listen to Story",
+          "option": true,
+          "impact": {
+            "happiness": 3,
+            "health": 0,
+            "smart": 4,
+            "looks": 0
+          }
+        },
+        {
+          "text": "Don't Listen",
+          "option": false,
+          "impact": {
+            "happiness": -1,
+            "health": 0,
+            "smart": -2,
+            "looks": 0
+          }
+        }
+      ],
+      "lifestage": "toddler"
+    },
+    {
+      "decision": "Try to Walk or Crawl",
+      "description": "You feel like moving around. Do you try to walk or just crawl?",
+      "options": [
+        {
+          "text": "Try to Walk",
+          "option": true,
+          "impact": {
+            "happiness": 4,
+            "health": 2,
+            "smart": 3,
+            "looks": 0
+          }
+        },
+        {
+          "text": "Crawl",
+          "option": false,
+          "impact": {
+            "happiness": 2,
+            "health": 1,
+            "smart": 1,
+            "looks": 0
+          }
+        }
+      ],
+      "lifestage": "toddler"
+    },
+        {
+          "decision": "Homework or Play",
+          "description": "Do you do your homework or play outside instead?",
+          "options": [
+            {
+              "text": "Do Homework",
+              "option": true,
+              "impact": {
+                "happiness": -2,
+                "health": 0,
+                "smart": 5,
+                "looks": 0
+              }
+            },
+            {
+              "text": "Play Outside",
+              "option": false,
+              "impact": {
+                "happiness": 4,
+                "health": 2,
+                "smart": -1,
+                "looks": 0
+              }
+            }
+          ],
+          "lifestage": "child"
+        },
+        {
+          "decision": "Join a Sports Team",
+          "description": "Do you join the local sports team or not?",
+          "options": [
+            {
+              "text": "Join Team",
+              "option": true,
+              "impact": {
+                "happiness": 3,
+                "health": 4,
+                "smart": 0,
+                "looks": 2
+              }
+            },
+            {
+              "text": "Don't Join",
+              "option": false,
+              "impact": {
+                "happiness": -1,
+                "health": -2,
+                "smart": 1,
+                "looks": 0
+              }
+            }
+          ],
+          "lifestage": "child"
+        },
+        {
+          "decision": "Make a New Friend",
+          "description": "Do you approach a new classmate to make friends?",
+          "options": [
+            {
+              "text": "Make Friend",
+              "option": true,
+              "impact": {
+                "happiness": 5,
+                "health": 0,
+                "smart": 1,
+                "looks": 0
+              }
+            },
+            {
+              "text": "Stay Alone",
+              "option": false,
+              "impact": {
+                "happiness": -3,
+                "health": 0,
+                "smart": 0,
+                "looks": 0
+              }
+            }
+          ],
+          "lifestage": "child"
+        },
+        {
+          "decision": "Participate in Class",
+          "description": "Do you raise your hand and participate in class or stay quiet?",
+          "options": [
+            {
+              "text": "Participate",
+              "option": true,
+              "impact": {
+                "happiness": 1,
+                "health": 0,
+                "smart": 4,
+                "looks": 0
+              }
+            },
+            {
+              "text": "Stay Quiet",
+              "option": false,
+              "impact": {
+                "happiness": -1,
+                "health": 0,
+                "smart": -2,
+                "looks": 0
+              }
+            }
+          ],
+          "lifestage": "child"
+        },
+        {
+          "decision": "Learn an Instrument",
+          "description": "Do you start learning a musical instrument?",
+          "options": [
+            {
+              "text": "Learn Instrument",
+              "option": true,
+              "impact": {
+                "happiness": 2,
+                "health": 0,
+                "smart": 3,
+                "looks": 1
+              }
+            },
+            {
+              "text": "Don't Learn",
+              "option": false,
+              "impact": {
+                "happiness": -2,
+                "health": 0,
+                "smart": -1,
+                "looks": 0
+              }
+            }
+          ],
+          "lifestage": "child"
+        },
+        {
+          "decision": "Help With Chores",
+          "description": "Do you help your parents with chores around the house?",
+          "options": [
+            {
+              "text": "Help",
+              "option": true,
+              "impact": {
+                "happiness": -1,
+                "health": 0,
+                "smart": 2,
+                "looks": 0
+              }
+            },
+            {
+              "text": "Don't Help",
+              "option": false,
+              "impact": {
+                "happiness": -3,
+                "health": 0,
+                "smart": -1,
+                "looks": 0
+              }
+            }
+          ],
+          "lifestage": "child"
+        },
+        {
+          "decision": "Eat Healthy Food",
+          "description": "Do you choose to eat healthy food or snacks?",
+          "options": [
+            {
+              "text": "Eat Healthy",
+              "option": true,
+              "impact": {
+                "happiness": -2,
+                "health": 5,
+                "smart": 1,
+                "looks": 1
+              }
+            },
+            {
+              "text": "Eat Snacks",
+              "option": false,
+              "impact": {
+                "happiness": 3,
+                "health": -3,
+                "smart": 0,
+                "looks": -1
+              }
+            }
+          ],
+          "lifestage": "child"
+        },
+        {
+          "decision": "Read a Book",
+          "description": "Do you spend your afternoon reading a book?",
+          "options": [
+            {
+              "text": "Read",
+              "option": true,
+              "impact": {
+                "happiness": -1,
+                "health": 0,
+                "smart": 4,
+                "looks": 0
+              }
+            },
+            {
+              "text": "Don't Read",
+              "option": false,
+              "impact": {
+                "happiness": 1,
+                "health": 0,
+                "smart": -2,
+                "looks": 0
+              }
+            }
+          ],
+          "lifestage": "child"
+        },
+        {
+          "decision": "Go to Bed Early",
+          "description": "Do you go to bed early or stay up late?",
+          "options": [
+            {
+              "text": "Bed Early",
+              "option": true,
+              "impact": {
+                "happiness": -2,
+                "health": 3,
+                "smart": 1,
+                "looks": 0
+              }
+            },
+            {
+              "text": "Stay Up Late",
+              "option": false,
+              "impact": {
+                "happiness": 2,
+                "health": -2,
+                "smart": -1,
+                "looks": 0
+              }
+            }
+          ],
+          "lifestage": "child"
+        },
+        {
+          "decision": "Attend a Birthday Party",
+          "description": "You're invited to a birthday party. Do you go?",
+          "options": [
+            {
+              "text": "Attend Party",
+              "option": true,
+              "impact": {
+                "happiness": 4,
+                "health": 0,
+                "smart": 0,
+                "looks": 0
+              }
+            },
+            {
+              "text": "Don't Attend",
+              "option": false,
+              "impact": {
+                "happiness": -3,
+                "health": 0,
+                "smart": 0,
+                "looks": 0
+              }
+            }
+          ],
+          "lifestage": "child"
+        },
+            {
+              "decision": "Join a Club or Not",
+              "description": "There are several clubs at school. Do you join one?",
+              "options": [
+                {
+                  "text": "Join a Club",
+                  "option": true,
+                  "impact": {
+                    "happiness": 3,
+                    "health": 0,
+                    "smart": 2,
+                    "looks": 0
+                  }
+                },
+                {
+                  "text": "Don't Join",
+                  "option": false,
+                  "impact": {
+                    "happiness": -2,
+                    "health": 0,
+                    "smart": -1,
+                    "looks": 0
+                  }
+                }
+              ],
+              "lifestage": "teen"
+            },
+            {
+              "decision": "Part-Time Job",
+              "description": "Do you take a part-time job?",
+              "options": [
+                {
+                  "text": "Work Part-Time",
+                  "option": true,
+                  "impact": {
+                    "happiness": -2,
+                    "health": -1,
+                    "smart": 1,
+                    "looks": 0
+                  }
+                },
+                {
+                  "text": "Don't Work",
+                  "option": false,
+                  "impact": {
+                    "happiness": 2,
+                    "health": 0,
+                    "smart": -1,
+                    "looks": 0
+                  }
+                }
+              ],
+              "lifestage": "teen"
+            },
+            {
+              "decision": "Study or Socialize",
+              "description": "Do you spend the evening studying or socializing with friends?",
+              "options": [
+                {
+                  "text": "Study",
+                  "option": true,
+                  "impact": {
+                    "happiness": -3,
+                    "health": 0,
+                    "smart": 4,
+                    "looks": 0
+                  }
+                },
+                {
+                  "text": "Socialize",
+                  "option": false,
+                  "impact": {
+                    "happiness": 4,
+                    "health": 0,
+                    "smart": -2,
+                    "looks": 0
+                  }
+                }
+              ],
+              "lifestage": "teen"
+            },
+            {
+              "decision": "Sports or No Sports",
+              "description": "Do you join the school sports team?",
+              "options": [
+                {
+                  "text": "Join Sports Team",
+                  "option": true,
+                  "impact": {
+                    "happiness": 2,
+                    "health": 3,
+                    "smart": 0,
+                    "looks": 2
+                  }
+                },
+                {
+                  "text": "Don't Join",
+                  "option": false,
+                  "impact": {
+                    "happiness": -1,
+                    "health": -2,
+                    "smart": 1,
+                    "looks": 0
+                  }
+                }
+              ],
+              "lifestage": "teen"
+            },
+            {
+              "decision": "Attend Party",
+              "description": "You're invited to a party. Do you go?",
+              "options": [
+                {
+                  "text": "Attend Party",
+                  "option": true,
+                  "impact": {
+                    "happiness": 5,
+                    "health": -1,
+                    "smart": -1,
+                    "looks": 0
+                  }
+                },
+                {
+                  "text": "Don't Attend",
+                  "option": false,
+                  "impact": {
+                    "happiness": -3,
+                    "health": 1,
+                    "smart": 1,
+                    "looks": 0
+                  }
+                }
+              ],
+              "lifestage": "teen"
+            },
+            {
+              "decision": "Volunteer Work",
+              "description": "Do you volunteer for community service?",
+              "options": [
+                {
+                  "text": "Volunteer",
+                  "option": true,
+                  "impact": {
+                    "happiness": 3,
+                    "health": 0,
+                    "smart": 2,
+                    "looks": 0
+                  }
+                },
+                {
+                  "text": "Don't Volunteer",
+                  "option": false,
+                  "impact": {
+                    "happiness": -2,
+                    "health": 0,
+                    "smart": -1,
+                    "looks": 0
+                  }
+                }
+              ],
+              "lifestage": "teen"
+            },
+            {
+              "decision": "Learn a Musical Instrument",
+              "description": "Do you start learning a musical instrument?",
+              "options": [
+                {
+                  "text": "Learn Instrument",
+                  "option": true,
+                  "impact": {
+                    "happiness": 2,
+                    "health": 0,
+                    "smart": 3,
+                    "looks": 1
+                  }
+                },
+                {
+                  "text": "Don't Learn",
+                  "option": false,
+                  "impact": {
+                    "happiness": -2,
+                    "health": 0,
+                    "smart": -1,
+                    "looks": 0
+                  }
+                }
+              ],
+              "lifestage": "teen"
+            },
+            {
+              "decision": "Focus on Studies or Leisure",
+              "description": "Do you focus more on your studies or on leisure activities?",
+              "options": [
+                {
+                  "text": "Focus on Studies",
+                  "option": true,
+                  "impact": {
+                    "happiness": -3,
+                    "health": 0,
+                    "smart": 5,
+                    "looks": 0
+                  }
+                },
+                {
+                  "text": "Focus on Leisure",
+                  "option": false,
+                  "impact": {
+                    "happiness": 4,
+                    "health": 0,
+                    "smart": -2,
+                    "looks": 0
+                  }
+                }
+              ],
+              "lifestage": "teem"
+            },
+            {
+              "decision": "Plan for Future Career",
+              "description": "Do you start planning for your future career?",
+              "options": [
+                {
+                  "text": "Plan Career",
+                  "option": true,
+                  "impact": {
+                    "happiness": -1,
+                    "health": 0,
+                    "smart": 4,
+                    "looks": 0
+                  }
+                },
+                {
+                  "text": "Don't Plan Yet",
+                  "option": false,
+                  "impact": {
+                    "happiness": 2,
+                    "health": 0,
+                    "smart": -2,
+                    "looks": 0
+                  }
+                }
+              ],
+              "lifestage": "teen"
+            },
+            {
+              "decision": "Eat Healthy or Fast Food",
+              "description": "Do you choose to eat healthy meals or indulge in fast food?",
+              "options": [
+                {
+                  "text": "Eat Healthy",
+                  "option": true,
+                  "impact": {
+                    "happiness": -2,
+                    "health": 4,
+                    "smart": 1,
+                    "looks": 2
+                  }
+                },
+                {
+                  "text": "Eat Fast Food",
+                  "option": false,
+                  "impact": {
+                    "happiness": 3,
+                    "health": -3,
+                    "smart": 0,
+                    "looks": -1
+                  }
+                }
+              ],
+              "lifestage": "teen"
+            }               
 ]

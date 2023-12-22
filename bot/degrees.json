@@ -1,0 +1,138 @@
+[
+    {
+      "degree": "Bachelor of Arts",
+      "field": "Liberal Arts",
+      "duration": 4
+    },
+    {
+      "degree": "Bachelor of Science",
+      "field": "Science",
+      "duration": 4
+    },
+    {
+      "degree": "Bachelor of Engineering",
+      "field": "Engineering",
+      "duration": 4
+    },
+    {
+      "degree": "Bachelor of Business Administration",
+      "field": "Business",
+      "duration": 4
+    },
+    {
+      "degree": "Bachelor of Fine Arts",
+      "field": "Fine Arts",
+      "duration": 4
+    },
+    {
+      "degree": "Bachelor of Computer Science",
+      "field": "Computer Science",
+      "duration": 4
+    },
+    {
+      "degree": "Bachelor of Nursing",
+      "field": "Nursing",
+      "duration": 4
+    },
+    {
+      "degree": "Bachelor of Architecture",
+      "field": "Architecture",
+      "duration": 5
+    },
+    {
+      "degree": "Bachelor of Education",
+      "field": "Education",
+      "duration": 4
+    },
+    {
+      "degree": "Bachelor of Economics",
+      "field": "Economics",
+      "duration": 4
+    },
+    {
+      "degree": "Bachelor of Law",
+      "field": "Law",
+      "duration": 4
+    },
+    {
+      "degree": "Bachelor of Pharmacy",
+      "field": "Pharmacy",
+      "duration": 4
+    },
+    {
+      "degree": "Bachelor of Medicine",
+      "field": "Medicine",
+      "duration": 5
+    },
+    {
+      "degree": "Bachelor of Dental Surgery",
+      "field": "Dental Surgery",
+      "duration": 5
+    },
+    {
+      "degree": "Bachelor of Veterinary Science",
+      "field": "Veterinary Science",
+      "duration": 5
+    },
+    {
+      "degree": "Bachelor of Design",
+      "field": "Design",
+      "duration": 4
+    },
+    {
+      "degree": "Bachelor of Journalism",
+      "field": "Journalism",
+      "duration": 4
+    },
+    {
+      "degree": "Bachelor of Mass Communication",
+      "field": "Mass Communication",
+      "duration": 4
+    },
+    {
+      "degree": "Bachelor of Physiotherapy",
+      "field": "Physiotherapy",
+      "duration": 4
+    },
+    {
+      "degree": "Bachelor of Hotel Management",
+      "field": "Hotel Management",
+      "duration": 4
+    },
+    {
+      "degree": "Bachelor of Fashion Technology",
+      "field": "Fashion Technology",
+      "duration": 4
+    },
+    {
+      "degree": "Bachelor of Event Management",
+      "field": "Event Management",
+      "duration": 4
+    },
+    {
+      "degree": "Bachelor of Social Work",
+      "field": "Social Work",
+      "duration": 4
+    },
+    {
+      "degree": "Bachelor of Business Management",
+      "field": "Business Management",
+      "duration": 4
+    },
+    {
+      "degree": "Bachelor of Commerce",
+      "field": "Commerce",
+      "duration": 3
+    },
+    {
+      "degree": "Bachelor of Computer Applications",
+      "field": "Computer Applications",
+      "duration": 3
+    },
+    {
+      "degree": "Bachelor of Business Studies",
+      "field": "Business Studies",
+      "duration": 3
+    }
+  ]
+  
